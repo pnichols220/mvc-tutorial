@@ -6,8 +6,9 @@ sourceCompatibility = 1.8
 version = '1.0'
 war {
     manifest {
-        attributes 'Implementation-Title': 'Gradle Quickstart', 'Implementation-Version': version
+        attributes 'Implementation-Title': 'Phone book', 'Implementation-Version': version
     }
+    archiveName 'phonebook.war'
 }
 
 repositories {
@@ -21,6 +22,8 @@ dependencies {
     providedCompile 'javax.servlet:servlet-api:2.5'
     
     testCompile 'junit:junit:4.+'
+    testCompile 'org.mockito:mockito-all:1.10.19'
+    
 }
 
 test {
